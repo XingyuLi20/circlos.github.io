@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>::Circlos::  Product Add </title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+    <title>Circlos</title>
+    <link rel="icon" href="assets/images/cc.png" type="image/x-icon"> <!-- Favicon-->
 
     <!--plugin css file -->
     <link rel="stylesheet" href="assets/plugin/multi-select/css/multi-select.css"><!-- Multi Select Css -->
@@ -19,14 +19,14 @@
     <link rel="stylesheet" href="assets/css/ebazar.style.min.css">
 </head>
 <body>
-    <div id="ebazar-layout" class="theme-blue">
+    <div id="ebazar-layout" class="theme-green">
         
         <!-- sidebar -->
         <div class="sidebar px-4 py-4 py-md-4 me-0">
             <div class="d-flex flex-column h-100">
                 <a href="index.html" class="mb-0 brand-icon">
                     <span class="logo-icon">
-                        <i class="bi bi-bag-check-fill fs-4"></i>
+                        <img src="assets/images/cc.png" width="70" height="80">
                     </span>
                     <span class="logo-text">Circlos</span>
                 </a>
@@ -97,9 +97,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="setting ms-2">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-5"></i></a>
-                            </div>
                         </div>
         
                         <!-- menu toggler -->
@@ -135,6 +132,20 @@
                     <div class="row g-3 mb-3">
                         <div class="col-xl-4 col-lg-4">
                             <div class="sticky-lg-top">
+                                <div class="card mb-3">
+                                    <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
+                                        <h6 class="m-0 fw-bold">Uplaod Items</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                Upload a spreadsheet of your products:
+                                            </label>
+                                            <p>&#x2002;</p>
+                                            <input id="fileSelect" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />  
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card mb-3">
                                     <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
                                         <h6 class="m-0 fw-bold">Pricing Info</h6>
@@ -302,7 +313,7 @@
                                             <div class="col-md-12">
                                                 <label class="form-label">Product Identifier URL</label>
                                                 <div class="input-group mb-3">
-                                                    <span class="input-group-text">https://eBazar.com/</span>
+                                                    <span class="input-group-text">https://circlos.com/</span>
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>

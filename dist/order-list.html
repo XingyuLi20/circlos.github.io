@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>::Circlos::  Orders List </title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+    <title>Circlos</title>
+    <link rel="icon" href="assets/images/cc.png" type="image/x-icon"> <!-- Favicon-->
 
     <!-- plugin css file  -->
     <link rel="stylesheet" href="assets/plugin/datatables/responsive.dataTables.min.css">
@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="assets/css/ebazar.style.min.css">
 </head>
 <body>
-    <div id="ebazar-layout" class="theme-blue">                          
+    <div id="ebazar-layout" class="theme-green">                          
         
         <!-- sidebar -->
         <div class="sidebar px-4 py-4 py-md-4 me-0">
             <div class="d-flex flex-column h-100">
                 <a href="index.html" class="mb-0 brand-icon">
                     <span class="logo-icon">
-                        <i class="bi bi-bag-check-fill fs-4"></i>
+                        <img src="assets/images/cc.png" width="70" height="80">
                     </span>
                     <span class="logo-text">Circlos</span>
                 </a>
@@ -93,9 +93,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="setting ms-2">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-5"></i></a>
-                            </div>
                         </div>
         
                         <!-- menu toggler -->
@@ -129,6 +126,9 @@
                     <div class="row g-3 mb-3"> 
                         <div class="col-md-12">
                             <div class="card"> 
+                                <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
+                                    <h6 class="m-0 fw-bold">Rental Status</h6>
+                                </div>
                                 <div class="card-body"> 
                                     <table id="myDataTable" class="table table-hover align-middle mb-0" style="width: 100%;">  
                                         <thead>
@@ -136,88 +136,88 @@
                                                 <th>Id</th>
                                                 <th>Item</th>
                                                 <th>Customer Name</th>
-                                                <th>Payment Info</th>
+                                                <th>Rental Time</th>
                                                 <th>Price</th>
                                                 <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href="order-details.html"><strong>#Order-78414</strong></a></td>
-                                                <td><img src="assets/images/product/product-1.jpg" class="avatar lg rounded me-2" alt="profile-image"><span> Oculus VR </span></td>
+                                                <td><strong>#Order-78414</strong></td>
+                                                <td><img src="assets/images/product/product-1.jpg" class="avatar lg rounded me-2" alt="profile-image"><span> Champion Men's Powerblend Fleece Hoodie</span></td>
                                                 <td>Molly</td>
-                                                <td>Credit Card</td>
+                                                <td>1 Month</td>
                                                 <td>
-                                                    $420
+                                                    $40
                                                 </td>
-                                                <td><span class="badge bg-warning">Progress</span></td>
+                                                <td><span class="badge bg-warning">In Transport</span></td>
                                             </tr>
                                             <tr>
-                                                <td><a href="order-details.html"><strong>#Order-58414</strong></a></td>
-                                                <td><img src="assets/images/product/product-2.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Wall Clock</span></td>
+                                                <td><strong>#Order-58414</strong></td>
+                                                <td><img src="assets/images/product/product-2.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Nike Men's Club Fleece Full-Zip Hoodie</span></td>
                                                 <td>Brian</td>
-                                                <td>Debit Card</td>
+                                                <td>2 Month</td>
                                                 <td>
-                                                    $220
+                                                    $100
                                                 </td>
-                                                <td><span class="badge bg-success">Complited</span></td>
+                                                <td><span class="badge bg-success">Currently Rented</span></td>
                                             </tr>
                                             <tr>
-                                                <td><a href="order-details.html"><strong>#Order-48414</strong></a></td>
-                                                <td><img src="assets/images/product/product-3.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Note Diaries</span></td>
+                                                <td><strong>#Order-48414</strong></td>
+                                                <td><img src="assets/images/product/product-3.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Adidas Men's Tiro 21 Track Pants</span></td>
                                                 <td>Julia</td>
-                                                <td>Debit Card</td>
+                                                <td>5 Month</td>
                                                 <td>
-                                                    $250
+                                                    $150
                                                 </td>
-                                                <td><span class="badge bg-success">Complited</span></td>
+                                                <td><span class="badge bg-success">Currently Rented</span></td>
                                             </tr>
                                             <tr>
-                                                <td><a href="order-details.html"><strong>#Order-38414</strong></a></td>
-                                                <td><img src="assets/images/product/product-4.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Flower Port</span></td>
+                                                <td><strong>#Order-38414</strong></td>
+                                                <td><img src="assets/images/product/product-4.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Champion Men's Cotton Jersey T-Shirt</span></td>
                                                 <td>Sonia</td>
-                                                <td>Credit Card</td>
+                                                <td>1 Week</td>
                                                 <td>
-                                                    $320
+                                                    $32
                                                 </td>
-                                                <td><span class="badge bg-warning">Progress</span></td>
+                                                <td><span class="badge bg-warning">In Transport</span></td>
                                             </tr>
                                             <tr>
-                                                <td><a href="order-details.html"><strong>#Order-28414</strong></a></td>
-                                                <td><img src="assets/images/product/product-1.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Oculus VR</span></td>
+                                                <td><strong>#Order-28414</strong></td>
+                                                <td><img src="assets/images/product/product-5.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Champion Men's Powerblend Fleece Sweatshirt</span></td>
                                                 <td>Adam H</td>
-                                                <td>Debit Card</td>
+                                                <td>1 Month</td>
                                                 <td>
-                                                    $20
+                                                    $40
                                                 </td>
-                                                <td><span class="badge bg-warning">Progress</span></td>
+                                                <td><span class="badge bg-warning">Pending</span></td>
                                             </tr>
                                             <tr>
-                                                <td><a href="order-details.html"><strong>#Order-18414</strong></a></td>
-                                                <td><img src="assets/images/product/product-2.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Wall Clock</span></td>
+                                                <td><strong>#Order-18414</strong></td>
+                                                <td><img src="assets/images/product/product-6.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Champion Men's Powerblend Fleece Joggers</span></td>
                                                 <td>Alexander</td>
-                                                <td>Debit Card</td>
+                                                <td>3 Month</td>
                                                 <td>
-                                                    $820
+                                                    $82
                                                 </td>
-                                                <td><span class="badge bg-success">Complited</span></td>
+                                                <td><span class="badge bg-success">Currently Rented</span></td>
                                             </tr>
                                             <tr>
-                                                <td><a href="order-details.html"><strong>#Order-11414</strong></a></td>
-                                                <td><img src="assets/images/product/product-3.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Note Diaries</span></td>
+                                                <td><strong>#Order-11414</strong></td>
+                                                <td><img src="assets/images/product/product-7.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Nike Men's Therma Dri-FIT Logo Hoodie</span></td>
                                                 <td>Gabrielle</td>
-                                                <td>Bank Emi</td>
+                                                <td>4 Month</td>
                                                 <td>
                                                     $620
                                                 </td>
-                                                <td><span class="badge bg-success">Complited</span></td>
+                                                <td><span class="badge bg-success">Currently Rented</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- Row end  -->
+                    </div><!-- Row end  -->
                 </div>
             </div>
         

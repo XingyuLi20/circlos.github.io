@@ -146,7 +146,7 @@ $(function() {
                 name: "Online Purchasing",
                 data: [15, 19, 11, 17, 21, 18, 20],
             },{
-                name: 'Offline Renting',
+                name: 'Online Renting',
                 data: [12, 15, 14, 16, 18, 13, 17],
             }],
 
