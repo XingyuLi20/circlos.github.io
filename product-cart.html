@@ -52,7 +52,7 @@
                     <span class="ms-2"><i class="icofont-bubble-right"></i></span>
                 </button>
             </div>
-        </div> 
+        </div>
 
         <!-- main body area -->
         <div class="main px-lg-4 px-md-4"> 
@@ -105,7 +105,6 @@
                             <div class="input-group flex-nowrap input-group-lg">
                                 <input type="search" class="form-control" placeholder="Search" aria-label="search" aria-describedby="addon-wrapping">
                                 <button type="button" class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></button>
-                                
                             </div>
                         </div>
         
@@ -119,105 +118,163 @@
                     <div class="row align-items-center"> 
                         <div class="border-0 mb-4"> 
                             <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
-                                <h3 class="fw-bold mb-0">Orders List</h3>
+                                <h3 class="fw-bold mb-0">Cart Detail</h3>
                             </div>
                         </div>
                     </div> <!-- Row end  -->
-                    <div class="row g-3 mb-3"> 
-                        <div class="col-md-12">
-                            <div class="card"> 
+                    <div class="row g-3 mb-3 justify-content-center"> 
+                        <div class="col-lg-12 col-xl-12 col-xxl-9">
+                            <div class="card">
                                 <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                    <h6 class="m-0 fw-bold">Rental Status</h6>
+                                    <h6 class="m-0 fw-bold">Order Summary</h6>
                                 </div>
-                                <div class="card-body"> 
-                                    <table id="myDataTable" class="table table-hover align-middle mb-0" style="width: 100%;">  
-                                        <thead>
-                                            <tr>
-                                                <th>Id</th>
-                                                <th>Item</th>
-                                                <th>Customer Name</th>
-                                                <th>Rental Time</th>
-                                                <th>Price</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><strong>#Order-78414</strong></td>
-                                                <td><img src="assets/images/product/product-1.jpg" class="avatar lg rounded me-2" alt="profile-image"><span> Champion Men's Powerblend Fleece Hoodie</span></td>
-                                                <td>Molly</td>
-                                                <td>1 Month</td>
-                                                <td>
-                                                    $40
-                                                </td>
-                                                <td><span class="badge bg-warning">In Transport</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>#Order-58414</strong></td>
-                                                <td><img src="assets/images/product/product-2.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Nike Men's Club Fleece Full-Zip Hoodie</span></td>
-                                                <td>Brian</td>
-                                                <td>2 Month</td>
-                                                <td>
-                                                    $100
-                                                </td>
-                                                <td><span class="badge bg-success">Currently Rented</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>#Order-48414</strong></td>
-                                                <td><img src="assets/images/product/product-3.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Adidas Men's Tiro 21 Track Pants</span></td>
-                                                <td>Julia</td>
-                                                <td>5 Month</td>
-                                                <td>
-                                                    $150
-                                                </td>
-                                                <td><span class="badge bg-success">Currently Rented</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>#Order-38414</strong></td>
-                                                <td><img src="assets/images/product/product-4.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Champion Men's Cotton Jersey T-Shirt</span></td>
-                                                <td>Sonia</td>
-                                                <td>1 Week</td>
-                                                <td>
-                                                    $32
-                                                </td>
-                                                <td><span class="badge bg-warning">In Transport</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>#Order-28414</strong></td>
-                                                <td><img src="assets/images/product/product-5.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Champion Men's Powerblend Fleece Sweatshirt</span></td>
-                                                <td>Adam H</td>
-                                                <td>1 Month</td>
-                                                <td>
-                                                    $40
-                                                </td>
-                                                <td><span class="badge bg-warning">Pending</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>#Order-18414</strong></td>
-                                                <td><img src="assets/images/product/product-6.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Champion Men's Powerblend Fleece Joggers</span></td>
-                                                <td>Alexander</td>
-                                                <td>3 Month</td>
-                                                <td>
-                                                    $82
-                                                </td>
-                                                <td><span class="badge bg-success">Currently Rented</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>#Order-11414</strong></td>
-                                                <td><img src="assets/images/product/product-7.jpg" class="avatar lg rounded me-2" alt="profile-image"><span>Nike Men's Therma Dri-FIT Logo Hoodie</span></td>
-                                                <td>Gabrielle</td>
-                                                <td>4 Month</td>
-                                                <td>
-                                                    $620
-                                                </td>
-                                                <td><span class="badge bg-success">Currently Rented</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="card-body">
+                                    <div class="product-cart">
+                                        <div class="checkout-table">
+                                            <div class="table-responsive">
+                                                <table id="myCartTable" class="table display dataTable table-hover align-middle" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="product">Product Image</th>
+                                                            <th>Product Name</th>
+                                                            <th class="quantity">Quantity</th>
+                                                            <th class="price">Price</th>
+                                                            <th class="action">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="assets/images/product/product-1.jpg" class="avatar rounded lg" alt="Product">
+                                                            </td>
+                                                            <td>
+                                                                <h6 class="title">Oculus VR <span class="d-block fs-6 text-primary">Pr-1204</span></h6>
+                                                            </td>
+                                                            <td>
+                                                                <input type="number" value="1" class="form-control">
+                                                            </td>
+                                                            <td>
+                                                                <p class="price">$149.00</p>
+                                                            </td>
+                                                            <td>
+                                                                <ul class="action">
+                                                                    <li><a class="favorite" href="product-detail.html"><i class="icofont-ui-edit"></i></a></li>
+                                                                    <li><a class="delete" href="#0"><i class="icofont-ui-delete"></i></a></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="assets/images/product/product-2.jpg" class="avatar rounded lg" alt="Product">
+                                                            </td>
+                                                            <td>
+                                                                <h6 class="title">Wall Clock <span class="d-block fs-6 text-primary">Pr-1004</span></h6>
+                                                            </td>
+                                                            <td>
+                                                                <input type="number" value="1" class="form-control">
+                                                            </td>
+                                                            <td>
+                                                                <p class="price">$399.00</p>
+                                                            </td>
+                                                            <td>
+                                                                <ul class="action">
+                                                                    <li><a class="favorite" href="product-detail.html"><i class="icofont-ui-edit"></i></a></li>
+                                                                    <li><a class="delete" href="#0"><i class="icofont-ui-delete"></i></a></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="assets/images/product/product-3.jpg" class="avatar rounded lg" alt="Product">
+                                                            </td>
+                                                            <td>
+                                                                <h6 class="title">Note Diaries <span class="d-block fs-6 text-primary">Pr-1224</span></h6>
+                                                            </td>
+                                                            <td>
+                                                                <input type="number" value="1" class="form-control">
+                                                            </td>
+                                                            <td>
+                                                                <p class="price">$149.00</p>
+                                                            </td>
+                                                            <td>
+                                                                <ul class="action">
+                                                                    <li><a class="favorite" href="product-detail.html"><i class="icofont-ui-edit"></i></a></li>
+                                                                    <li><a class="delete" href="#0"><i class="icofont-ui-delete"></i></a></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="assets/images/product/product-4.jpg" class="avatar rounded lg" alt="Product">
+                                                            </td>
+                                                            <td>
+                                                                <h6 class="title">Flower Port  <span class="d-block fs-6 text-primary">Pr-1414</span></h6>
+                                                            </td>
+                                                            <td>
+                                                                <input type="number" value="1" class="form-control">
+                                                            </td>
+                                                            <td>
+                                                                <p class="price">$399.00</p>
+                                                            </td>
+                                                            <td>
+                                                                <ul class="action">
+                                                                    <li><a class="favorite" href="product-detail.html"><i class="icofont-ui-edit"></i></a></li>
+                                                                    <li><a class="delete" href="#0"><i class="icofont-ui-delete"></i></a></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-coupon-total checkout-coupon-total-2 d-flex flex-wrap mt-2">
+                                            <div class="checkout-coupon">
+                                                <span>Apply Coupon to get discount!</span>
+                                                <form action="#">
+                                                    <div class="single-form form-default d-inline-flex mt-3">
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" placeholder="Coupon Code" aria-label="Apply Coupon">
+                                                            <button class="btn btn-primary" type="button">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="checkout-total">
+                                                <div class="single-total">
+                                                    <p class="value">Subotal Price:</p>
+                                                    <p class="price">$1096.00</p>
+                                                </div>
+                                                <div class="single-total">
+                                                    <p class="value">Shipping Cost (+):</p>
+                                                    <p class="price">$12.00</p>
+                                                </div>
+                                                <div class="single-total">
+                                                    <p class="value">Discount (-):</p>
+                                                    <p class="price">$10.00</p>
+                                                </div>
+                                                <div class="single-total">
+                                                    <p class="value">Tax(18%):</p>
+                                                    <p class="price">$198.00</p>
+                                                </div>
+                                                <div class="single-total total-payable">
+                                                    <p class="value">Total Payable:</p>
+                                                    <p class="price">$1296.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-btn d-flex justify-content-between pt-3 flex-wrap mt-2">
+                                            <div class="single-btn w-sm-100">
+                                                <a href="product-grid.html" class="btn btn-secondary w-sm-100">Continue Shopping</a>
+                                            </div>
+                                            <div class="single-btn w-sm-100">
+                                                <a href="checkout.html" class="btn btn-primary w-sm-100">Proceed to Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>     
                                 </div>
                             </div>
                         </div>
-                    </div><!-- Row end  -->
+                    </div>
                 </div>
             </div>
         
@@ -368,20 +425,22 @@
     <!-- Jquery Core Js -->
     <script src="assets/bundles/libscripts.bundle.js"></script>
 
-    <!-- Plugin Js -->
-    <script src="assets/bundles/dataTables.bundle.js"></script>  
+    <!-- Plugin Js-->
+    <script src="assets/bundles/dataTables.bundle.js"></script>
 
     <!-- Jquery Page Js -->
-    <script src="../js/template.js"></script>
+    <script src="js/template.js"></script>
     <script>
-        $('#myDataTable')
-        .addClass( 'nowrap')
+        $(document).ready(function() {
+        $('#myCartTable')
+        .addClass( 'nowrap' )
         .dataTable( {
             responsive: true,
             columnDefs: [
                 { targets: [-1, -3], className: 'dt-body-right' }
             ]
         });
+    });
     </script>
 </body>
 </html> 
